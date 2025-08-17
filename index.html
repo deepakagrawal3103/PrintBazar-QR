@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print Bazar</title>
+  <style>
+    /* Background Animation */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Card */
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      color: white;
+      width: 90%;
+      max-width: 400px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Heading */
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 15px rgba(255,255,255,0.7);
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    .btn-call {
+      background: #28a745;
+    }
+    .btn-whatsapp {
+      background: #25D366;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Welcome to Print Bazar</h1>
+    <p>Get your notes printed at just ₹2 per page. Contact us now!</p>
+    <a href="tel:+916232744465" class="btn btn-call">📞 Call Now</a>
+    <a href="https://wa.me/916232744465?text=Hello%20Print%20Bazar%2C%20I%20want%20to%20print%20my%20notes!" class="btn btn-whatsapp">💬 WhatsApp Us</a>
+  </div>
+</body>
+</html>
